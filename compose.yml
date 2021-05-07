@@ -1,0 +1,42 @@
+version: '3.1'
+
+services:
+
+  wordpress:
+    image: wordpress
+    restart: always
+    ports:
+      - 8080:80
+    environment:
+      WORDPRESS_DB_HOST: ${WORDPRESS_DB_HOST}
+      WORDPRESS_DB_USER: ${WORDPRESS_DB_USER}
+      WORDPRESS_DB_PASSWORD: ${WORDPRESS_DB_PASSWORD}
+      WORDPRESS_DB_NAME: ${WORDPRESS_DB_NAME}
+    volumes:
+      - wordpress:/var/www/html
+    networks:
+      - mybridge
+    
+
+  db:
+    build:
+      context: .
+      dockerfile: db_dockerfile
+    image: db:latest
+    restart: always
+    volumes:
+      - db:/var/lib/mysql
+    environment:
+      MYSQL_DATABASE: ${MYSQL_DATABASE}
+      MYSQL_USER: ${MYSQL_USER}
+      MYSQL_PASSWORD: ${MYSQL_PASSWORD}
+    networks:
+      - mybridge
+
+volumes:
+  wordpress:
+  db:
+
+networks:
+  mybridge:
+    driver: bridge
