@@ -7,36 +7,32 @@ services:
     restart: always
     ports:
       - 8080:80
-    environment:
-      WORDPRESS_DB_HOST: ${WORDPRESS_DB_HOST}
-      WORDPRESS_DB_USER: ${WORDPRESS_DB_USER}
-      WORDPRESS_DB_PASSWORD: ${WORDPRESS_DB_PASSWORD}
-      WORDPRESS_DB_NAME: ${WORDPRESS_DB_NAME}
+    #environment:
+     # WORDPRESS_DB_HOST: db
+     # WORDPRESS_DB_USER: root
+     # WORDPRESS_DB_PASSWORD: 1234
+     # WORDPRESS_DB_NAME: test
+    env_file: .env 
     volumes:
       - wordpress:/var/www/html
     networks:
       - mybridge
-    
 
   db:
-    build:
-      context: .
-      dockerfile: db_dockerfile
-    image: db:latest
+    image: mariadb:10.6.0-focal
     restart: always
+    #environment:
+      #MYSQL_DATABASE: test
+      #MYSQL_USER: "${MARIADB_USER}"
+      #MA_PASSWORD: "${MARIADB_PASSWORD}"
+      #MARIADB_ROOT_PASSWORD: "${MYSQL_PASSWORD}"
+    env_file: .env
     volumes:
       - db:/var/lib/mysql
-    environment:
-      MYSQL_DATABASE: ${MYSQL_DATABASE}
-      MYSQL_USER: ${MYSQL_USER}
-      MYSQL_PASSWORD: ${MYSQL_PASSWORD}
     networks:
       - mybridge
-
 volumes:
   wordpress:
   db:
-
 networks:
   mybridge:
-    driver: bridge

@@ -1,12 +1,18 @@
 #MariaDB on Alpine
-FROM alpine:3.3
+FROM mariadb:10.6.0-focal
 
-RUN apk update && apk add --no-cache mariadb mariadb-client
-RUN mysql_install_db --user=mysql
+RUN apt-get update
 
-ENTRYPOINT ["mysqld_safe"]
-
+#ENV MYSQL_ROOT_PASSWORD=1234
 EXPOSE 3306
+
+VOLUME ["/var/lib/mysql"]
+
+CMD ["mysqld"]
+
+
+
+
 
 
 
