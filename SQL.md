@@ -88,3 +88,17 @@ Các phương pháp để xác định lỗ hổng:
 1.  Thay đổi logic của trang web để xác định sự thay đổi của trang web phụ thuộc vào điều kiện của câu truy vấn(Boolean-based)  
 2.  Truy vấn điều kiện trigger time delay, cho phép bạn nhận biết được câu truy vấn là đúng hay sai dựa vào thời gian response(Time-based)  
   
+# Cách phòng chống  
+1. Filter input data bằng blacklist, whitelist  
+2. Giới hạn quyền thao tác với database cho user    
+3. Sử dụng parameterized queries. Tách rời tham số và câu query   
+```
+<?php
+$stmt = $dbh->prepare ("INSERT INTO user (firstname, surname) VALUES (:f-name, :s-name)");
+$stmt -> bindParam(':f-name', 'John');
+$stmt -> bindParam(':s-name', 'Smith');
+$stmt -> execute();
+?>
+```  
+4. Sử dụng Stored Procedures  
+5. Escape special character  
