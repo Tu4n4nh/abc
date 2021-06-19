@@ -53,11 +53,20 @@ The attacker contruct a web page containing the payload. When victim visit the a
 the request  
 - The vulnerable web will process request and change password of victim  
 
-# How to construct nad deliver a CSRF exploit  
+# How to construct and deliver a CSRF exploit  
 CSRF can manually create. It's an HTML form wthin javascript that automatical submit the form. 
 Burpsuite supports function CSRF PoC generator that is built in to Burp Pro  
 The delivery mechisms are essentially same as reflect xss. The attacker feed their website 
 that has malicious HTMl to victim or induce vimtim to visit their website  
 
+# Prevent  
+- Validate every case before action is executed  
+- Using double submit cookie. When user visit, the application generate the value and set it as cookie in the user's browser. When the user perform action, the application require the value as the hidden value in form. If the server check both value match at server side, the application will accept it.  
+- Generate the CSRF token, set it as hidden value in form  
+- Don't click any strange link  
+
+***ref***
+https://cheatsheetseries.owasp.org/cheatsheets/Cross-Site_Request_Forgery_Prevention_Cheat_Sheet.html#double-submit-cookie  
+https://portswigger.net/web-security/csrf  
 
 
