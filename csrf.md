@@ -65,7 +65,7 @@ that has malicious HTMl to victim or induce vimtim to visit their website
 - Generate the CSRF token, set it as hidden value in form  
 - Don't click any strange link  
 
-***ref***
+***ref***  
 https://cheatsheetseries.owasp.org/cheatsheets/Cross-Site_Request_Forgery_Prevention_Cheat_Sheet.html#double-submit-cookie  
 https://portswigger.net/web-security/csrf  
 
