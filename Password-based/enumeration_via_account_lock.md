@@ -15,7 +15,7 @@ The web application will be block account if you input wrong password many. The 
 
 ![image](https://user-images.githubusercontent.com/22276823/123980035-6d58a500-d9eb-11eb-96fe-40d43ce273cf.png)  
 
-After running attack, sort the 'invalid' columns, i have found 1 username don't match. The string return is 'You have made too many incorrect login attempts'. That
+After running attack, sort the 'invalid' columns, i have found 1 username don't match. The string return is `'You have made too many incorrect login attempts'`. That
 is mean i found the right username
 
 ![image](https://user-images.githubusercontent.com/22276823/123981203-5bc3cd00-d9ec-11eb-919a-b357ca8bbb73.png)
@@ -24,4 +24,4 @@ is mean i found the right username
 
 ![image](https://user-images.githubusercontent.com/22276823/123981723-ac3b2a80-d9ec-11eb-8121-c1844e7b043c.png)
 
-Next, I brute force the password. The webapp has the another logic flaw when if account is blocking, you input the right password. The webapp doesn't response the string 'You have made too many incorrect login attempts'.So this time, i match the string 'You have made too many incorrect login attempts'. After running attack, i just filter the responses doesn't match 
+Next, I brute force the password. The webapp has the another logic flaw when if account is blocking, you input the right password. The webapp doesn't response the string `'You have made too many incorrect login attempts'`. So this time, i match the string `'You have made too many incorrect login attempts'`. After running attack, i just filter the responses doesn't match 
