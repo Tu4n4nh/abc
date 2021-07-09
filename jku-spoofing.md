@@ -53,7 +53,7 @@ First, create a new `private key` with `openssl genrsa -out priv.pem` and create
 
 ![image](https://user-images.githubusercontent.com/22276823/125032953-38e58880-e07e-11eb-9a9b-1f3272d96369.png)  
 
-Next, create a new JWKS file with the new `public key`. I need to extract the `n` and `e` parameter from `public key`. Be awared, It is represented as a Base64urlUInt-encoded value.
+Next, create a new JWKS file with the new `public key`. I need to extract the `n` and `e` parameter from `public key`. Be awared, It is represented as a Base64urlUInt-encoded value. [RFC7518](https://datatracker.ietf.org/doc/html/rfc7518#page-30)
 ![image](https://user-images.githubusercontent.com/22276823/125033809-52d39b00-e07f-11eb-806b-e3a833a4b5b4.png)  
 
 Now, input the result to JWKS file. Run the mini server that can return the file when we submit token  
