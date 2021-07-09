@@ -62,6 +62,10 @@ Now, input the result to JWKS file. Run the mini server that can return the file
 
 ![image](https://user-images.githubusercontent.com/22276823/125034673-62071880-e080-11eb-88b3-67c92ae79b5f.png)  
 
+Finally, create a new JWT, change the `jku` to my server. 
+![image](https://user-images.githubusercontent.com/22276823/125035057-db067000-e080-11eb-933a-0102967de299.png)  
+
+![image](https://user-images.githubusercontent.com/22276823/125035098-e78ac880-e080-11eb-8228-d75d4929bcd7.png)  
 
 
 
