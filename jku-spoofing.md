@@ -68,7 +68,8 @@ Finally, create a new JWT, change the `jku` to my server.
 ![image](https://user-images.githubusercontent.com/22276823/125035098-e78ac880-e080-11eb-8228-d75d4929bcd7.png)  
 
 
-
+## Defences  
+The vulnerable occurs when the server trust the all `jku` address. To mitigate, create a list of trusted server that allows to verify JWT
 
 
 
