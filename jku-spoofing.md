@@ -47,6 +47,12 @@ For this challenge, When decode JWT. I see it has `jku`.
 
 ![image](https://user-images.githubusercontent.com/22276823/125032209-26b71a80-e07d-11eb-99fe-5b4baa065134.png)  
 
+The flow of request  
+![image](https://user-images.githubusercontent.com/22276823/125103140-9653f680-e0cb-11eb-8041-2d78c5ff616b.png)  
+
+If server has vulnerable. The flow is change to
+![image](https://user-images.githubusercontent.com/22276823/125103671-1b3f1000-e0cc-11eb-97c1-1e7637f2a311.png)  
+
 I try to create a new JWT with redirecting JWKS to mine.  
 
 First, create a new `private key` with `openssl genrsa -out priv.pem` and create a new `public key` with `openssl rsa -in priv.pem -pubout -out pub.key`  
