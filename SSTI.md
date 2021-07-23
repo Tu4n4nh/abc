@@ -18,13 +18,15 @@ Do template có thể hoạt động trên 2 context: `plaintext context` và `c
 Giá trị của entrypoint có thể được truyền thẳng vào HTML. Repsonse của context giống với XSS, input được chèn vào tag HTML. Cách để nhận biết và phân biệt nó với XSS
 là truyền cho nó 1 statement. Vì `XSS` là một lỗ hổng client, các giá trị truyền vào của nó đơn thuần là các chuỗi string, text. Còn template được dùng với mục đích
 render tự động nội dung của web app nên nó có thể xử lý các statement  
-```smarty=Hello ${7*7}
+```
+smarty=Hello ${7*7}
 Hello 49
 ```  
 
 ### Code context  
 Giá trị của entrypoint được truyền vào HTML thông qua template statement  
-```smarty= TuanAnh
+```
+smarty= TuanAnh
 <h1>Hello {{ smarty }}</h1>
 ```  
 https://portswigger.net/web-security/images/template-decision-tree.png  
