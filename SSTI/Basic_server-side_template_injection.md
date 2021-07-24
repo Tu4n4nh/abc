@@ -7,7 +7,7 @@
 3. Create a custom attack  
 
 ## Overview  
-Kiểm tra các input đầu vào, sử dụng các statement đơn giản để kiểm tra `<%= 7*7 %>`. Bài lab này bị lỗi tại đường link thông báo sản phẩm hết hàng
+Kiểm tra các input đầu vào, sử dụng các expression đơn giản để kiểm tra `<%= 7*7 %>`. Bài lab này bị lỗi tại đường link thông báo sản phẩm hết hàng
 `web-security-academy.net/?message=Unfortunately this product is out of stock`.   
 
 ![image](https://user-images.githubusercontent.com/22276823/126865885-096788ac-bde2-4c14-bdea-959f119e705d.png)  
