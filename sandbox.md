@@ -8,3 +8,6 @@ nguyên cục bộ.
 Máy ảo cũng được coi là một sandbox, với khả năng ảo hóa dựa trên phần cứng, tách biệt hoàn toàn với phần cứng. Tuy nhiên với nhu cầu chạy một ứng dụng, ta có thể
 cài đặt các software sandbox environment như là sandboxies. Phần mềm này sẽ tạo ra một môi trường độc lập để chạy ứng dụng mà không cần phải chạy máy ảo. Đối với các
 ứng dụng java, java machine đã tích hợp sẵn chế độ sandbox để hỗ trợ lúc chạy phần mềm. 
+
+![index](https://user-images.githubusercontent.com/22276823/126892837-96af26be-752f-4e8e-aa28-4f6517e43147.png)  
+![1](https://user-images.githubusercontent.com/22276823/126892844-66a0e382-fcd9-4e90-9b0a-181e5f708f70.png)  
