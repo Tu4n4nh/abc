@@ -46,7 +46,7 @@ Tốn kém chi phí triển khai
  
 ## Hạn chế SSTI  
 Hầu hết các template thông dụng hiện nay đều có cơ chế sandbox để bảo vệ ứng dụng web. Cơ chế làm việc của chúng là xây dựng một bộ các class, command có thể gây lỗi, khi sandbox được kíck hoạt, source code sẽ được kiểm tra qua bộ lọc này trước khi được thực thi  
-***ví dụ với template Jinja2***
+***ví dụ với template Jinja2***  
 ![image](https://user-images.githubusercontent.com/22276823/126982277-ca4621fb-856a-4a1d-abd1-863f3c8583de.png)  
 
 danh sách các method ko an toàn  
