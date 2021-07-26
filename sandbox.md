@@ -11,6 +11,38 @@ Phần lớn các ứng dụng ngày nay đều hoạt động dưới môi trư
 3. Giả lập thiết bị  
 
 ### Ảo hóa môi trường  
-Loại này thường được sử dụng trong quá trình phát triển phần mềm, và cũng là loại phố biến nhất nhất. Cơ chế làm việc của loại này là sẽ tạo ra một vùng nhớ cô lập với tài nguyên cục bộ, phần mềm chỉ có thể hoạt động trong này. Hệ đièu hành sẽ chịu trách nhiệm quản lý 
-![index](https://user-images.githubusercontent.com/22276823/126892837-96af26be-752f-4e8e-aa28-4f6517e43147.png)  
+Loại này thường được sử dụng trong quá trình phát triển phần mềm, và cũng là loại phố biến nhất nhất. Cơ chế làm việc của loại này là sẽ tạo ra một vùng nhớ cô lập với tài nguyên cục bộ, phần mềm chỉ có thể hoạt động trong này. Mọi hoạt động tác động lên hệ thống đều bị giới hạn đến mức thấp nhất. Hầu hết các phần mềm hiện nay đều được phát triển dưa trên cách này: snap, sandboxies, jvm, web browser, windows sandbox.  
+![index](https://user-images.githubusercontent.com/22276823/126892837-96af26be-752f-4e8e-aa28-4f6517e43147.png)   
+Ngày này, khái niệm OS-level virtualization với đại diện là docker có thể giúp cho các developer tự chủ hơn trong việc xây dựng môi trường. Nó phù hợp cho việc phát triển các ứng dụng phía server khi đảm bảo được việc các ứng dụng được hoạt động độc lập vừa tự chủ được các thành phần trong kiến trúc: băng thông, ổ đĩa, ram,....    
+
+***Ưu điểm:*** 
+Triển khai nhanh chóng, đặc biệt phù hợp với các developer cần môi trường để test các bản phá, update của ứng dụng  
+Phù hợp với người dùng thông thường, cần môi trường để mở các file, đường link lạ  
+  
+***Nhược điểm***  
+Không phù hợp với yêu cầu cần để test virus hoặc malware  
+
+### Giả lập hệ điều hành  
+Loại này sẽ ảo hóa luôn một hệ điều hành đầy đủ, ứng dụng sẽ chạy và chịu sự kiểm soát của hệ điều hành ảo này, hệ điều hành ảo này sẽ chịu trách nhiệm liên lạc với các tài nguyên cục bộ. Loại này sẽ cho cái nhìn tổng quát hơn về đối tượng cần theo dõi. Phù hợp cho các yêu cầu cần theo dõi bahaviour của một loại virus hay malware. Để tạo được một máy ảo ta có thể dùng: KVM, Vmware, Virtualbox,... Hoặc có thế dùng luôn Cuckoo sandbox, project này tích hợp sẵn các công cụ theo dõi, phân tích và xuất báo cáo,...
 ![1](https://user-images.githubusercontent.com/22276823/126892844-66a0e382-fcd9-4e90-9b0a-181e5f708f70.png)  
+
+
+***Ưu điểm***  
+Có cái nhìn chi tiết hơn về hoạt động của đối tượng  
+Chủ động hơn trong việc customize sandbox 
+
+***Nhược điểm***  
+Khó triển khai, tốn công hơn so với loại một  
+
+### Giả lập hệ thống mạng  
+Đây là mô hình tốn kém và tốn công nhất, mô phỏng hoàn chỉnh một hệ thống mạng. Hệ thống sandbox loại này thường được xây dựng trong các hệ thống lớn để đánh lừa các cuộc tấn công vào hệ thống công ty. Nó có khả năng chịu được các cuộc tấn công lớn, đông thời theo dõi và cảnh bảo tới trung tâm điều khiển.  Về bản chất nó là một hệ thống đầy đủ nhưng được dựng lên để đánh lạc hướng kẻ tấn công  
+
+***Ưu điểm***  
+Là một hệ thống mạng hoàn chỉnh, dẽ dàng tùy chỉnh với nhiều mục đích khác nhau
+
+***Nhược điểm***  
+Tốn kém chi phí triển khai  
+
+
+
+
