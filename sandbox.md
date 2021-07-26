@@ -35,7 +35,7 @@ Chủ động hơn trong việc customize sandbox
 Khó triển khai, tốn công hơn so với loại một  
 
 ### Giả lập hệ thống mạng  
-Đây là mô hình tốn kém và tốn công nhất, mô phỏng hoàn chỉnh một hệ thống mạng. Hệ thống sandbox loại này thường được xây dựng trong các hệ thống lớn để đánh lừa các cuộc tấn công vào hệ thống công ty. Nó có khả năng chịu được các cuộc tấn công lớn, đông thời theo dõi và cảnh bảo tới trung tâm điều khiển.  Về bản chất nó là một hệ thống đầy đủ nhưng được dựng lên để đánh lạc hướng kẻ tấn công  
+Đây là mô hình tốn kém và tốn công nhất, mô phỏng hoàn chỉnh một hệ thống mạng. Hệ thống sandbox loại này thường được xây dựng trong các hệ thống lớn để đánh lừa các cuộc tấn công vào hệ thống công ty. Nó có khả năng chịu được các cuộc tấn công lớn, đông thời theo dõi và cảnh bảo tới trung tâm điều khiển.  Về bản chất nó là một hệ thống đầy đủ nhưng được dựng lên để đánh lạc hướng kẻ tấn công. Ví dụ của loại này điển hinh như honeynet project      
 
 ***Ưu điểm***  
 Là một hệ thống mạng hoàn chỉnh, dẽ dàng tùy chỉnh với nhiều mục đích khác nhau
