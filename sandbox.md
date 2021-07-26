@@ -14,7 +14,7 @@ Phần lớn các ứng dụng ngày nay đều hoạt động dưới môi trư
 Loại này thường được sử dụng trong quá trình phát triển phần mềm, và cũng là loại phố biến nhất nhất. Cơ chế làm việc của loại này là sẽ tạo ra một vùng nhớ cô lập với tài nguyên cục bộ, phần mềm chỉ có thể hoạt động trong này. Mọi hoạt động tác động lên hệ thống đều bị giới hạn đến mức thấp nhất. Hầu hết các phần mềm hiện nay đều được phát triển dưa trên cách này: snap, sandboxies, jvm, web browser, windows sandbox.  
 ![index](https://user-images.githubusercontent.com/22276823/126892837-96af26be-752f-4e8e-aa28-4f6517e43147.png)   
 Ngày này, khái niệm OS-level virtualization với đại diện là docker có thể giúp cho các developer tự chủ hơn trong việc xây dựng môi trường. Nó phù hợp cho việc phát triển các ứng dụng phía server khi đảm bảo được việc các ứng dụng được hoạt động độc lập vừa tự chủ được các thành phần trong kiến trúc: băng thông, ổ đĩa, ram,....   
-Loại sandbox này chỉ quan tâm nếu không đúng với các mẫu của nó sẽ báo ra lỗi. VD như trường hợp các web browser chặn tải các file độc hại
+Loại sandbox này chỉ quan tâm nếu không đúng với các mẫu của nó sẽ báo ra lỗi. VD như trường hợp các web browser chặn tải các file độc hại  
 ***Ưu điểm:*** 
 Triển khai nhanh chóng, đặc biệt phù hợp với các developer cần môi trường để test các bản phá, update của ứng dụng  
 Phù hợp với người dùng thông thường, cần môi trường để mở các file, đường link lạ  
