@@ -23,7 +23,7 @@ Phù hợp với người dùng thông thường, cần môi trường để m�
 Không phù hợp với yêu cầu cần để test virus hoặc malware  
 
 ### Giả lập hệ điều hành  
-Loại này sẽ ảo hóa luôn một hệ điều hành đầy đủ, ứng dụng sẽ chạy và chịu sự kiểm soát của hệ điều hành ảo này, hệ điều hành ảo này sẽ chịu trách nhiệm liên lạc với các tài nguyên cục bộ. Loại này sẽ cho cái nhìn tổng quát hơn về đối tượng cần theo dõi. Phù hợp cho các yêu cầu cần theo dõi bahaviour của một loại virus hay malware. Để tạo được một máy ảo ta có thể dùng: KVM, Vmware, Virtualbox,... Hoặc có thế dùng luôn Cuckoo sandbox, project này tích hợp sẵn các công cụ theo dõi, phân tích và xuất báo cáo,...
+Loại này sẽ ảo hóa luôn một hệ điều hành đầy đủ, ứng dụng sẽ chạy và chịu sự kiểm soát của hệ điều hành ảo này, hệ điều hành ảo này sẽ chịu trách nhiệm liên lạc với các tài nguyên cục bộ. Loại này sẽ cho cái nhìn tổng quát hơn về đối tượng cần theo dõi. Phù hợp cho các yêu cầu cần theo dõi bahaviour của một loại virus hay malware. Để tạo được một máy ảo ta có thể dùng: KVM, Vmware, Virtualbox,... Hoặc có thế dùng luôn Cuckoo sandbox, project này tích hợp sẵn các công cụ theo dõi, phân tích và xuất báo cáo,...  
 ![1](https://user-images.githubusercontent.com/22276823/126892844-66a0e382-fcd9-4e90-9b0a-181e5f708f70.png)  
 
 
