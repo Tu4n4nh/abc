@@ -13,11 +13,12 @@ Phần lớn các ứng dụng ngày nay đều hoạt động dưới môi trư
 ### Ảo hóa môi trường  
 Loại này thường được sử dụng trong quá trình phát triển phần mềm, và cũng là loại phố biến nhất nhất. Cơ chế làm việc của loại này là sẽ tạo ra một vùng nhớ cô lập với tài nguyên cục bộ, phần mềm chỉ có thể hoạt động trong này. Mọi hoạt động tác động lên hệ thống đều bị giới hạn đến mức thấp nhất. Hầu hết các phần mềm hiện nay đều được phát triển dưa trên cách này: snap, sandboxies, jvm, web browser, windows sandbox.  
 ![index](https://user-images.githubusercontent.com/22276823/126892837-96af26be-752f-4e8e-aa28-4f6517e43147.png)   
-Ngày này, khái niệm OS-level virtualization với đại diện là docker có thể giúp cho các developer tự chủ hơn trong việc xây dựng môi trường. Nó phù hợp cho việc phát triển các ứng dụng phía server khi đảm bảo được việc các ứng dụng được hoạt động độc lập vừa tự chủ được các thành phần trong kiến trúc: băng thông, ổ đĩa, ram,....    
-
+Ngày này, khái niệm OS-level virtualization với đại diện là docker có thể giúp cho các developer tự chủ hơn trong việc xây dựng môi trường. Nó phù hợp cho việc phát triển các ứng dụng phía server khi đảm bảo được việc các ứng dụng được hoạt động độc lập vừa tự chủ được các thành phần trong kiến trúc: băng thông, ổ đĩa, ram,....   
+Loại sandbox này chỉ quan tâm nếu không đúng với các mẫu của nó sẽ báo ra lỗi. VD như trường hợp các web browser chặn tải các file độc hại
 ***Ưu điểm:*** 
 Triển khai nhanh chóng, đặc biệt phù hợp với các developer cần môi trường để test các bản phá, update của ứng dụng  
 Phù hợp với người dùng thông thường, cần môi trường để mở các file, đường link lạ  
+Phù hợp với các ứng dụng tính độc lập giữa các process, chỉ quan tâm đến loại dữ liệu  
   
 ***Nhược điểm***  
 Không phù hợp với yêu cầu cần để test virus hoặc malware  
@@ -25,7 +26,7 @@ Không phù hợp với yêu cầu cần để test virus hoặc malware
 ### Giả lập hệ điều hành  
 Loại này sẽ ảo hóa luôn một hệ điều hành đầy đủ, ứng dụng sẽ chạy và chịu sự kiểm soát của hệ điều hành ảo này, hệ điều hành ảo này sẽ chịu trách nhiệm liên lạc với các tài nguyên cục bộ. Loại này sẽ cho cái nhìn tổng quát hơn về đối tượng cần theo dõi. Phù hợp cho các yêu cầu cần theo dõi bahaviour của một loại virus hay malware. Để tạo được một máy ảo ta có thể dùng: KVM, Vmware, Virtualbox,... Hoặc có thế dùng luôn Cuckoo sandbox, project này tích hợp sẵn các công cụ theo dõi, phân tích và xuất báo cáo,...  
 ![1](https://user-images.githubusercontent.com/22276823/126892844-66a0e382-fcd9-4e90-9b0a-181e5f708f70.png)  
-
+Loại sandbox này tập trung vào việc điều tra hành vi của một đối tượng. Mục đích của nó là thu thập các mẫu, template độc hại để phân tích và đưa vào các ứng dụng anti virus để dùng cho lần sau.  
 
 ***Ưu điểm***  
 Có cái nhìn chi tiết hơn về hoạt động của đối tượng  
@@ -42,6 +43,15 @@ Là một hệ thống mạng hoàn chỉnh, dẽ dàng tùy chỉnh với nhi�
 
 ***Nhược điểm***  
 Tốn kém chi phí triển khai  
+ 
+## Hạn chế SSTI  
+Hầu hết các template thông dụng hiện nay đều có cơ chế sandbox để bảo vệ ứng dụng web. Cơ chế làm việc của chúng là xây dựng một bộ các class, command có thể gây lỗi, khi sandbox được kíck hoạt, source code sẽ được kiểm tra qua bộ lọc này trước khi được thực thi  
+***ví dụ với template Jinja2***
+![image](https://user-images.githubusercontent.com/22276823/126982277-ca4621fb-856a-4a1d-abd1-863f3c8583de.png)  
+
+danh sách các method ko an toàn  
+
+
 
 
 
