@@ -46,7 +46,10 @@ Là một hệ thống mạng hoàn chỉnh, dẽ dàng tùy chỉnh với nhi�
 Tốn kém chi phí triển khai  
   
 ### Các loại sandbox của từng ứng dụng  
-Hầu hết các ứng dụng ngày nay đều có cơ chế sandbox khi phát triển lên ứng dụng. Cơ chế này đều dựa trên ý tưởng tách riêng `untrust source code`, hạn chế các method gây ảnh hưởng đến tài nguyên nội bộ, chạy các tác vụ ko an toàn trong các process con với quyền thấp hơn 
+Hầu hết các ứng dụng ngày nay đều có cơ chế sandbox khi phát triển lên ứng dụng. Cơ chế này đều dựa trên ý tưởng tách riêng `untrust source code`, hạn chế các method gây ảnh hưởng đến tài nguyên nội bộ, chạy các tác vụ ko an toàn trong các process con với quyền thấp hơn  
+![image](https://user-images.githubusercontent.com/22276823/127098236-930e9da5-5e50-4f5f-b971-984460264cdb.png)  
+Mô hình sandbox của firefox  
+
 ## Hạn chế SSTI  
 Hầu hết các template thông dụng hiện nay đều có cơ chế sandbox để bảo vệ ứng dụng web. Cơ chế làm việc của chúng là xây dựng một bộ các class, command có thể gây lỗi, khi sandbox được kíck hoạt, source code sẽ được kiểm tra qua bộ lọc này trước khi được thực thi  
 ***ví dụ với template Jinja2***  
