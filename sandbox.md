@@ -6,12 +6,13 @@ môi trường hiện tại, cô lập phạm vị hoạt động của phần m
 ## Phân loại  
 Phần lớn các ứng dụng ngày nay đều hoạt động dưới môi trường sandbox. Nó sẽ tạo ra một môi trường hạn chế vói low permission để hạn chế ảnh hưởng của ứng dụng lên tài nguyên cục bộ. Tùy thuộc vào nhu cầu, độ phức tạp của đối tượng cần theo dõi mà sẽ có các loại sandbox khác nhau. Các sandbox sẽ tập trung vào việc cố gắng cô lập hoàn toàn đối tượng với các tài nguyên cục bộ. Trong lĩnh vực bảo mật, sandbox có thể có thêm các tính năng như theo dõi hành vi của đối tượng, phân tích và xuất báo cáo,... Tuy nhiên có thể chia ra gồm các loại:
 
-1. Ảo hóa môi trường
+1. Ảo hóa môi trường  
 2. Giả lập hệ điều hành  
 3. Giả lập thiết bị  
+4. Các loại sandbox của từng ứng dụng  
 
 ### Ảo hóa môi trường  
-Loại này thường được sử dụng trong quá trình phát triển phần mềm, và cũng là loại phố biến nhất nhất. Cơ chế làm việc của loại này là sẽ tạo ra một vùng nhớ cô lập với tài nguyên cục bộ, phần mềm chỉ có thể hoạt động trong này. Mọi hoạt động tác động lên hệ thống đều bị giới hạn đến mức thấp nhất. Hầu hết các phần mềm hiện nay đều được phát triển dưa trên cách này: snap, sandboxies, jvm, web browser, windows sandbox.  
+Loại này thường được sử dụng trong quá trình phát triển phần mềm, và cũng là loại phố biến nhất nhất. Cơ chế làm việc của loại này là sẽ tạo ra một vùng nhớ cô lập với tài nguyên cục bộ, phần mềm chỉ có thể hoạt động trong này. Mọi hoạt động tác động lên hệ thống đều bị giới hạn đến mức thấp nhất. Hầu hết các phần mềm hiện nay đều được phát triển dưa trên cách này: snap, sandboxies, windows sandbox.  
 ![index](https://user-images.githubusercontent.com/22276823/126892837-96af26be-752f-4e8e-aa28-4f6517e43147.png)   
 Ngày này, khái niệm OS-level virtualization với đại diện là docker có thể giúp cho các developer tự chủ hơn trong việc xây dựng môi trường. Nó phù hợp cho việc phát triển các ứng dụng phía server khi đảm bảo được việc các ứng dụng được hoạt động độc lập vừa tự chủ được các thành phần trong kiến trúc: băng thông, ổ đĩa, ram,....   
 Loại sandbox này chỉ quan tâm nếu không đúng với các mẫu của nó sẽ báo ra lỗi. VD như trường hợp các web browser chặn tải các file độc hại  
@@ -43,7 +44,9 @@ Là một hệ thống mạng hoàn chỉnh, dẽ dàng tùy chỉnh với nhi�
 
 ***Nhược điểm***  
 Tốn kém chi phí triển khai  
- 
+  
+### Các loại sandbox của từng ứng dụng  
+Hầu hết các ứng dụng ngày nay đều có cơ chế sandbox khi phát triển lên ứng dụng. Cơ chế này đều dựa trên ý tưởng tách riêng `untrust source code`, hạn chế các method gây ảnh hưởng đến tài nguyên nội bộ, chạy các tác vụ ko an toàn trong các process con với quyền thấp hơn 
 ## Hạn chế SSTI  
 Hầu hết các template thông dụng hiện nay đều có cơ chế sandbox để bảo vệ ứng dụng web. Cơ chế làm việc của chúng là xây dựng một bộ các class, command có thể gây lỗi, khi sandbox được kíck hoạt, source code sẽ được kiểm tra qua bộ lọc này trước khi được thực thi  
 ***ví dụ với template Jinja2***  
@@ -51,6 +54,8 @@ Hầu hết các template thông dụng hiện nay đều có cơ chế sandbox 
 
 danh sách các method ko an toàn  
 
+***ref***  
+https://searchsecurity.techtarget.com/answer/Whats-the-difference-between-software-containers-and-sandboxing  
 
 
 
