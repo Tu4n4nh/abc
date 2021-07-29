@@ -37,6 +37,7 @@ https://portswigger.net/web-security/images/template-decision-tree.png
 
 ## Phòng chống  
 1. Luôn luôn santinizer input  
+2. Dùng sandbox  
 
 ***ref***  
 https://portswigger.net/research/server-side-template-injection  
