@@ -57,6 +57,7 @@ Heroku sẽ setup và trả về các thông tin cần thiết cho mình connect
     - django-heroku  
     - django-bmemcached  
     - pytz  
+  
 Lưu ý: viết `dockerfile`, run container, tạo project Django hoàn chỉnh, chạy thành công trên local trước sẽ deploy lên heroku.  
 Sâu khi đã cài đặt xong các yêu cầu cần thiết, nếu triển khai với `DEBUG=False`, ta cần phải cấu hình `whitenoise` để load các file static  
 Chi tiết xem link sau  
