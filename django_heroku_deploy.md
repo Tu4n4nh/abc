@@ -140,7 +140,7 @@ conn = psycopg2.connect(database=DATABASES['NAME'], user=DATABASES['USER'], pass
 
 ### 4. heroku.yml, runtime.txt, Procfile  
 Đây là 3 file quan trọng, bắt buộc phải có, trong đó `runtime.txt`, `Profile` bắt buộc phải có khi deploy app trên Heroku. `heroku.yml` dùng để build container. 
-Các file này được đặt tại thư mục gốc của project
+Các file này được đặt tại thư mục gốc của project  
 ![image](https://user-images.githubusercontent.com/22276823/128593903-548e2d5a-810a-4ed5-aa86-1420294d4fb4.png)  
 
 **heroku.yml***  
