@@ -2,7 +2,8 @@
 Các bước deploy một web app chạy django, postgresql, memcache  
 Heroku có 2 dạng deploy app: `buildpack` và `cotainer`  
 `Container` lại có 2 loại deploy là: `docker registry`/`heroku registry` và `build manifest`. Hướng dẫn này chia sẻ cách build một container theo cách `build manifest`  
-
+## Workflow  
+![heroku-deployment-process-simplified](https://user-images.githubusercontent.com/22276823/129481773-5bf4e773-54f2-45e1-94bb-2991b2d155db.png)  
 ## Deploy app  
 ***Requirement***   
 1.  Tạo tài khoản heroku, tạo app, kết nối với github, chuyển app sang dạng `container`    
