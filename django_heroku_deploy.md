@@ -229,6 +229,7 @@ https://testdriven.io/blog/deploying-django-to-heroku-with-docker/
 https://github.com/memcachier/examples-django-tasklist  
 https://www.youtube.com/watch?v=Oy71OgKZbOQ&t=138s  
 https://www.youtube.com/watch?v=4axmcEZTE7M&t=774s  
+https://blog.heroku.com/build-docker-images-heroku-yml  
 
 
 
