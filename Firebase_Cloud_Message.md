@@ -1,7 +1,7 @@
 ## Overview  
 Firebase cloud message là một giải pháp nhắn tin và gửi thông báo miễn phí đến các thiết bị.  
 FCM Architectural Overview [Nguồn](https://firebase.google.com/docs/cloud-messaging/fcm-architecture)  
-https://firebase.google.com/docs/cloud-messaging/images/diagram-FCM.png  
+![image](https://firebase.google.com/docs/cloud-messaging/images/diagram-FCM.png)
 
 1. App server, chịu trách nhiệm tạo ra các message, notification để gửi đến FCM backend  
 2. FCM backend sẽ gắn thêm các meta data, tạo ra các message ID sau đó gửi đến lớp platform transport  
