@@ -52,7 +52,7 @@ curl --header "Authorization: key=$api_key" \
 Nếu trả về `200 OK` với nội dung tương tư như sau thì attacker có thể tùy ý gửi noti đến client  
 ![image](https://user-images.githubusercontent.com/22276823/129899917-2f9909b1-1fff-4cd6-abaa-18a984fe0169.png)  
    
-Theo dõi hướng dẫn tại trang chủ [link](https://firebase.google.com/docs/cloud-messaging/send-message#send-messages-using-the-legacy-app-server-protocols) hoặc [blog](https://apoorv487.medium.com/testing-fcm-push-notification-through-postman-terminal-part-1-5c2df94e6c8d)  
+Theo dõi hướng dẫn tại trang chủ [link](https://firebase.google.com/docs/cloud-messaging/send-message#send-messages-using-the-legacy-app-server-protocols) hoặc [blog](https://apoorv487.medium.com/testing-fcm-push-notification-through-postman-terminal-part-1-5c2df94e6c8d) để gửi noti, message  
 ```
 POST https://fcm.googleapis.com/fcm/send HTTP/1.1
 
