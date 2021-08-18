@@ -9,6 +9,7 @@ FCM Architectural Overview [Nguồn](https://firebase.google.com/docs/cloud-mess
 4. Device là một thiết bị được cài FCM SDK  
 
 Thông tin về các loại token của firebase [link](https://firebase.google.com/docs/cloud-messaging/concept-options#credentials)  
+![image](https://user-images.githubusercontent.com/22276823/129904380-0d8cfd36-d53b-4ce5-8f91-6a1a3e3fd7d6.png)  
 
 ## FCM token  
 Với kiến trúc như hình trên, FCM backend sẽ do google quản lý, để app server có thể kết nối được với FCM backend, có một số cách sau.  
