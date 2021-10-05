@@ -63,8 +63,8 @@ Order: https://www.lita.gg/pages/user/orders
 Xem thông tin người chơi: https://www.lita.gg/pages/user/skill?id=  
 
 ## Js file 
-https://vi.lita.gg/static/js/chunk-vendors.e7826bb1.js
-https://vi.lita.gg/static/js/index.d3ea7f13.js (trang chủ, thông tin dường dẫn api)
-https://vi.lita.gg/static/js/pages-chat~pages-index-index~pages-user-edit-info~pages-user-orders~pages-user-skill~pages-user-wallet.644a92da.js (thông tin user)
-https://vi.lita.gg/static/js/pages-index-index.63130a47.js
-https://vi.lita.gg/static/js/pages-index-index~pages-moving-apply.9160369e.js
+https://vi.lita.gg/static/js/chunk-vendors.e7826bb1.js  
+https://vi.lita.gg/static/js/index.d3ea7f13.js (trang chủ, thông tin dường dẫn api)  
+https://vi.lita.gg/static/js/pages-chat~pages-index-index~pages-user-edit-info~pages-user-orders~pages-user-skill~pages-user-wallet.644a92da.js (thông tin user)  
+https://vi.lita.gg/static/js/pages-index-index.63130a47.js  
+https://vi.lita.gg/static/js/pages-index-index~pages-moving-apply.9160369e.js  
