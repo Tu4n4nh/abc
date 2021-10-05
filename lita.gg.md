@@ -70,4 +70,4 @@ https://vi.lita.gg/static/js/pages-index-index.63130a47.js
 https://vi.lita.gg/static/js/pages-index-index~pages-moving-apply.9160369e.js  
 
 ## Testing  
-Tính năng nạp tiền: test sql, đổi giá tiền 
+Tính năng nạp tiền: test sql, sửa đổi giá tiền 
