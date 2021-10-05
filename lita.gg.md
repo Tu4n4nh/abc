@@ -1,6 +1,6 @@
 ## Công nghệ 
 1. lita.gg: vue.js, nginx, WAF cloudfront, corejs 
-2. funbit.me: php 8.0.8, java, nginx 1.20.0 
+2. api.funbit.me: php 8.0.8, java, nginx 1.20.0 
 3. tobsnssdk.com: nginx 
 4. websocket wss://socket.im.servicecloudweb.com/v1/websocket 
 
@@ -68,3 +68,6 @@ https://vi.lita.gg/static/js/index.d3ea7f13.js (trang chủ, thông tin dường
 https://vi.lita.gg/static/js/pages-chat~pages-index-index~pages-user-edit-info~pages-user-orders~pages-user-skill~pages-user-wallet.644a92da.js (thông tin user)  
 https://vi.lita.gg/static/js/pages-index-index.63130a47.js  
 https://vi.lita.gg/static/js/pages-index-index~pages-moving-apply.9160369e.js  
+
+## Testing  
+Tính năng nạp tiền: test sql, đổi giá tiền 
