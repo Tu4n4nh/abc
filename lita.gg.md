@@ -55,12 +55,12 @@ ailab.tobsnssdk.com
 /v2/user/ssid
 ```
 ## Chức năng 
-Login: FB hoặc điện thoại 
-Chat: https://www.lita.gg/pages/chat 
-Nap tien: https://www.lita.gg/recharge 
-Edit profile: https://www.lita.gg/pages/user/edit-info (upload image, voice, sua thong tin ca nhan) 
-Order: https://www.lita.gg/pages/user/orders 
-Xem thông tin người chơi: https://www.lita.gg/pages/user/skill?id= 
+Login: FB hoặc điện thoại  
+Chat: https://www.lita.gg/pages/chat  
+Nap tien: https://www.lita.gg/recharge  
+Edit profile: https://www.lita.gg/pages/user/edit-info (upload image, voice, sua thong tin ca nhan)  
+Order: https://www.lita.gg/pages/user/orders  
+Xem thông tin người chơi: https://www.lita.gg/pages/user/skill?id=  
 
 ## Js file 
 https://vi.lita.gg/static/js/chunk-vendors.e7826bb1.js
