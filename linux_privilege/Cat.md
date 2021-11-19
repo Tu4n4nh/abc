@@ -58,6 +58,8 @@ find / -perm 4000
 ![image](https://user-images.githubusercontent.com/22276823/142626241-e6bbfb0d-0fe7-473b-b5b2-c71f20c57c94.png) 
  
 ![image](https://user-images.githubusercontent.com/22276823/142626384-2828cf10-911f-4e5f-be6f-1386b69609de.png) 
+ 
+![image](https://user-images.githubusercontent.com/22276823/142626928-ff7e0186-89f9-4db6-8c46-8a99b5f4f120.png) 
 
 **reference** 
 1. https://gtfobins.github.io/gtfobins/cat/ 
