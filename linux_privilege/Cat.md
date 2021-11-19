@@ -55,6 +55,15 @@ sudo -l
 ```
 find / -perm 4000
 ```  
+![image](https://user-images.githubusercontent.com/22276823/142626241-e6bbfb0d-0fe7-473b-b5b2-c71f20c57c94.png) 
+ 
+![image](https://user-images.githubusercontent.com/22276823/142626384-2828cf10-911f-4e5f-be6f-1386b69609de.png) 
+
+**reference** 
+1. https://gtfobins.github.io/gtfobins/cat/ 
+2. https://www.linuxnix.com/suid-set-suid-linuxunix/ 
+3. https://www.hackingarticles.in/linux-for-pentester-cat-privilege-escalation/ 
+
 
 
 
