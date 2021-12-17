@@ -60,12 +60,61 @@ Content of `flag.txt`
 
 ![image](https://user-images.githubusercontent.com/22276823/146555995-f1e3bb8a-ede4-4542-ba5f-debbcd4b7a5e.png) 
 
+Now, the `dev-note.txt` said: 
+
+![image](https://user-images.githubusercontent.com/22276823/146573077-9b0ffba6-2553-4ec1-829e-a1e333d634de.png)
+
+I knock port to open tcp docker port 
+
+![image](https://user-images.githubusercontent.com/22276823/146573441-e5eed2ec-964b-4baf-9e2d-87881dc329e4.png) 
+
+After knock port, check port docker 
+
+![image](https://user-images.githubusercontent.com/22276823/146573643-4ffdbd9c-5a7c-4a64-8c14-cfd5dcd23839.png) 
+
+Connect to docker host 
+```
+docker -H host:2375 version 
+
+Client:
+ Version:           20.10.11+dfsg1
+ API version:       1.41
+ Go version:        go1.17.5
+ Git commit:        dea9396
+ Built:             Tue Dec 14 23:54:43 2021
+ OS/Arch:           linux/amd64
+ Context:           default
+ Experimental:      true
+
+Server: Docker Engine - Community
+ Engine:
+  Version:          20.10.2
+  API version:      1.41 (minimum version 1.12)
+  Go version:       go1.13.15
+  Git commit:       8891c58
+  Built:            Mon Dec 28 16:15:09 2020
+  OS/Arch:          linux/amd64
+  Experimental:     false
+ containerd:
+  Version:          1.4.3
+  GitCommit:        269548fa27e0089a8b8278fc4fc781d7f65a939b
+ runc:
+  Version:          1.0.0-rc92
+  GitCommit:        ff819c7e9184c13b7c2607fe6c30ae19403a7aff
+ docker-init:
+  Version:          0.19.0
+  GitCommit:        de40ad0
+```  
+
+Search exploit on GTFOBin and got flag 
+
+![image](https://user-images.githubusercontent.com/22276823/146574110-b68f9eb9-b040-4c3c-8543-f48ab7ead954.png) 
 
 
-
-
-
-
+**ref** 
+https://gtfobins.github.io/gtfobins/docker/ 
+https://book.hacktricks.xyz/pentesting/2375-pentesting-docker
+(Bug Bounty Bootcamp: The Guide to Finding and Reporting Web Vulnerabilities)[https://books.google.com.vn/books?id=ScwkEAAAQBAJ&pg=PT365&lpg=PT365&dq=git+cat-file+without+in+.git&source=bl&ots=DyfvCG24cH&sig=ACfU3U1-Ehq100yvM9NHiPB3xbM0aD5zWw&hl=en&sa=X&ved=2ahUKEwjmsbri7ur0AhXE8HMBHTVoDegQ6AF6BAgZEAM#v=onepage&q=git%20cat-file%20without%20in%20.git&f=false]
 
 
 
