@@ -112,9 +112,9 @@ Search exploit on GTFOBin and got flag
 
 
 **ref** 
-https://gtfobins.github.io/gtfobins/docker/ 
-https://book.hacktricks.xyz/pentesting/2375-pentesting-docker 
-[Bug Bounty Bootcamp: The Guide to Finding and Reporting Web Vulnerabilities](https://books.google.com.vn/books?id=ScwkEAAAQBAJ&pg=PT365&lpg=PT365&dq=git+cat-file+without+in+.git&source=bl&ots=DyfvCG24cH&sig=ACfU3U1-Ehq100yvM9NHiPB3xbM0aD5zWw&hl=en&sa=X&ved=2ahUKEwjmsbri7ur0AhXE8HMBHTVoDegQ6AF6BAgZEAM#v=onepage&q=git%20cat-file%20without%20in%20.git&f=false)
+https://gtfobins.github.io/gtfobins/docker/  
+https://book.hacktricks.xyz/pentesting/2375-pentesting-docker  
+[Bug Bounty Bootcamp: The Guide to Finding and Reporting Web Vulnerabilities](https://books.google.com.vn/books?id=ScwkEAAAQBAJ&pg=PT365&lpg=PT365&dq=git+cat-file+without+in+.git&source=bl&ots=DyfvCG24cH&sig=ACfU3U1-Ehq100yvM9NHiPB3xbM0aD5zWw&hl=en&sa=X&ved=2ahUKEwjmsbri7ur0AhXE8HMBHTVoDegQ6AF6BAgZEAM#v=onepage&q=git%20cat-file%20without%20in%20.git&f=false)  
 
 
 
