@@ -54,8 +54,27 @@ Check privileges
  
 ![image](https://user-images.githubusercontent.com/22276823/147273332-b533de06-f26f-436d-9641-93987775ffb6.png) 
  
-After searching google. I used [Juicy Potato](https://github.com/ohpe/juicy-potato) but it doesn't work. Continue research, I found another way. This way exploit (PrintSpooler)[https://itm4n.github.io/printspoofer-abusing-impersonate-privileges/]
-service
+After searching google. I used [Juicy Potato](https://github.com/ohpe/juicy-potato) but it doesn't work. Continue research, I found another way. This way exploit [PrintSpooler](https://itm4n.github.io/printspoofer-abusing-impersonate-privileges/) service. Download execution file and put to server 
+
+![image](https://user-images.githubusercontent.com/22276823/147274385-f5fb719c-4212-436e-a615-27e412b6de8e.png) 
+
+![image](https://user-images.githubusercontent.com/22276823/147274580-47c6182d-c94e-4084-bbd3-96bdf9a3f40b.png) 
+
+Run executable file and get root flag
+
+![image](https://user-images.githubusercontent.com/22276823/147274689-f92b73d2-602b-4490-b0b0-6ccad6460ea8.png) 
+
+![image](https://user-images.githubusercontent.com/22276823/147274768-87d5c338-f702-4f34-abd0-62792c594927.png) 
+
+**Resources** 
+1. https://github.com/itm4n/PrintSpoofer  
+2. https://github.com/ohpe/juicy-potato  
+3. https://medium.com/r3d-buck3t/impersonating-privileges-with-juicy-potato-e5896b20d505  
+4. https://itm4n.github.io/printspoofer-abusing-impersonate-privileges/  
+
+
+
+
 
 
 
