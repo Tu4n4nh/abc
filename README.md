@@ -1,2 +1,2 @@
 # abc
-Project for learning
+Project for learning purpose
